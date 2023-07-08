@@ -16,7 +16,7 @@ body{
     margin-top: 5px;
 }
 
-.hero{
+.main{
     width: 100%;
     height: 100vh;
     display: flex;
@@ -25,7 +25,7 @@ body{
     background-color: rgb(232, 232, 232);
 }
 
-.hero::before{
+.main::before{
     content: '';
     position: absolute;
     left: -90px;
@@ -37,7 +37,7 @@ body{
     border-bottom-right-radius: 50%;
 }
 
-.hero::after{
+.main::after{
     content: '';
     position: absolute;
     right: -300px;
@@ -49,7 +49,7 @@ body{
     border-top-right-radius: 50%;
 }
 
-.grid{
+.main1{
     display: grid;
     place-items: center;
     align-items: center;
@@ -265,6 +265,9 @@ body{
     justify-content: center;
     align-items: flex-end;
     flex-direction: column;
+    width: 100%;
+    padding: 10px 20px;
+
 }
 
 .dogimgs{
@@ -277,7 +280,10 @@ body{
 .dogimg{
     width: 45px;
     border-radius: 10px;
+
 }
+
+
 
 .pricebubble{
     width: 100%;
@@ -306,6 +312,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 10px;
+
 }
 
 .duration-info p{
@@ -318,6 +325,7 @@ body{
     color: white;
 }
 
+
 .inputfield{
     width: 100%;
     height: 80px;
@@ -325,6 +333,7 @@ body{
     justify-content: center;
     align-items: center;
     position: relative;
+    
 }
 
 .message{
@@ -335,11 +344,13 @@ body{
     outline: none;
     border: none;
     padding: 10px;
+    
 }
 
 .message::placeholder{
     font-size: .8rem;
 }
+
 
 .submit{
     width: 25px;
@@ -354,18 +365,19 @@ body{
     top: 25px;
 }
 
+
 @media (max-width: 1000px) {
-    .hero::before{
-        width: 30vw;
+    .main::before{
+        width: 30vw
     }
 
-    .grid{
+    .main1{
         width: 90%;
     }
 }
 
 @media (max-width: 780px) {
-    .grid{
+    .main1{
         grid-template-columns: 1fr;
         width: 90%;
     }
@@ -382,7 +394,7 @@ body{
 
     }
 
-    .hero{
+    .main{
         height: auto;
         padding-bottom: 60px;
         padding-top: 60px;
@@ -399,14 +411,14 @@ body{
         transform: translateX(0);
     }
 
-    .hero::after{
+    .main::after{
         width: 550px;
         right: -330px;
         bottom: -330px;
         height: 50vh;
     }
 
-    .hero::before{
+    .main::before{
         width: 450px;
         left: -190px;
         
